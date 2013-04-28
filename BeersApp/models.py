@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# guy was here.
 
 
 class Beer(models.Model):
