@@ -5,7 +5,7 @@ from django.db import models
 
 class Beer(models.Model):
     brand = models.CharField(max_length=30)
-    #parent_id = models.IntField() # for main brands it is empty, for sub_brand it's brand's primary key
+    parent_id = models.IntegerField() # for main brands it is empty, for sub_brand it's brand's primary key
     sub_brand = models.CharField(max_length=30)
     bottle_barrell = models.CharField(max_length=30)
     #alc = models.realField()  # in % 5%,4.5% ...                                                                              
