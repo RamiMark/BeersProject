@@ -1,0 +1,170 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Your Page Title Here :)</title>
+	<meta name="description" content="">
+	<meta name="author" content="Anna Kukoyashna" >
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script type='text/javascript' src="{% static "js/jquery-1.9.0.js" %}"></script>
+<script type='text/javascript' src="{% static "js/underscore.js" %}"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+
+	<!-- CSS
+  ================================================== -->
+ 	
+ 	<link rel="stylesheet" href="{% static "stylesheets/base.css" %}">
+ 	<link rel="stylesheet" href="{% static "stylesheets/checkbox.css" %}">
+ 	<link rel="stylesheet" href="{% static "stylesheets/form.css" %}">
+	<link rel="stylesheet" href="{% static "stylesheets/skeleton.css" %}">
+   	<link rel="stylesheet" href="{% static "stylesheets/layout.css" %}">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body >
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+<div class="wrap-header">
+	<div class="container">
+	<!-- logo -->
+<h1 class="logo"><a title="Portfolio" href="#">DRAFT BEER</a></h1>
+
+ 
+
+<div  class="login">
+ <a href="#"> Login </a> 
+</div>
+</div>
+<!-- navigation -->
+
+
+<div class="container menu">
+<nav class="primary">
+	<ul>
+		<li><a class="active" href="#"> HOME </a> </li>
+		<li><a href="#">BEER</a> </li>
+		<li><a href="#">PLACES</a> </li>
+		<li><a href="#">CONTACT</a></li>
+		<li><a href="#">ACCOUNT</a></li>
+	</ul>
+
+</nav>
+
+<form class="menu-search">
+<input id="search" type="search" name="search">
+<input type="submit" value="">
+</form>
+
+</div>
+</nav>
+</div><!-- end wrap-header -->
+
+
+
+
+<div class=" content container" id="placeholder">
+{% block content %}{% endblock %} 
+</div>
+
+
+<footer>
+	<div class="container widgets">
+		
+		<div class="one-third column tweets">
+		
+		
+		<h3	> RECENT TWEETS</h3>	
+		<ul>	
+		<li>	<p>Suspendisse fringilla hendrerit molestie. Duis bibendum tellus at ligula ornare a cursus enim lacinia.</p> 
+		<small>1 min ago </small> 		</li>
+		<li>	<p>Suspendisse fringilla hendrerit molestie. Duis bibendum tellus at ligula ornare a cursus enim lacinia.</p>	
+		<small>10 min ago </small> 		</li>			
+		</ul>	
+		<a href="#" class="footer-button">Follow me</a>	
+		</div>
+		
+		<div class="one-third column news">	
+			<h3> RECENT NEWS</h3>	
+		<ul>	
+		<li>	
+				<small>11-11-2012</small> 				
+				<p>Suspendisse fringilla hendrerit molestie. Duis bibendum tellus at ligula ornare a cursus enim lacinia.</p> 
+				</li>
+		<li>	
+		<small>9-11-2012</small> 	
+		<p> Suspendisse fringilla hendrerit molestie. Duis bibendum tellus at ligula ornare a cursus enim lacinia. Suspendisse fringilla hendrerit molestie. Duis bibendum tellus at ligula ornare a cursus enim lacinia.</p>	
+				</li>			
+		</ul>	
+	
+	<a href="#" class="footer-button">Older News </a>				
+			</div>
+		
+<div class="one-third column news">	
+			<h3	> CONTACT</h3>	
+			</div>		
+		
+		
+	</div><!-- end widgets -->
+</footer>
+
+<footer class="sub-footer">
+	Copyright content goes here
+</footer>
+
+
+
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+
+<!-- product content -->
+<!-- <script type='text/html' id="content_product">
+<h2>product name</h2>
+<p> content....</p>
+</script> -->
+<!-- end product content -->
+
+
+
+
+
+
+<!-- admin_places -->
+
+<!-- admin-beer -->
+
+
+
+
+
+
+</body>
+</html>

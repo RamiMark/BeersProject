@@ -1,0 +1,28 @@
+<!-- index content -->
+{% extends "index.html" %}
+
+
+<script type='text/html' id="content_contact_form">
+<div class="sixteen columns">
+<h1 class="name1">Contact<br></h1>
+<div class="form-content">
+<form id="signup_form" action="#" method="post">	
+    <label for="username">  Name:</label>
+    <input type="text" name="username" id="username" value="" tabindex="1">
+    <label for="email"> Email:</label>
+   
+   <input type="text" name="email" id="email" value="" tabindex="1">
+    
+    <label for="comment"> Comment:</label>
+    <textarea name="comment" id="comment" value="" tabindex="1"></textarea>
+    
+		<!--  <label for="continue">Submit</label> -->
+    <input  type="submit" id="continue" value="Continue">
+</form>
+</div>
+</div>
+
+
+</script>
+
+{% endblock %}

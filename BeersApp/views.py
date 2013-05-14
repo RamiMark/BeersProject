@@ -24,3 +24,21 @@ def search_brand_results(request):
             {'brands': brands, 'query': q})
     else:
         return HttpResponse('Please submit a search term.')
+
+def index (request):
+    brands_lst=list(Beer.objects.all())
+    desired_column_length = 2
+    brands = [[]]
+    col = brands[0]
+    while len(brands_lst):
+        col.append(brands_lst.pop())
+        if len(col)>=desired_column_length:
+                newcol = []
+                brands.append(newcol)
+                col = newcol
+
+    return render(request, 'home.html', {'brands': brands})
+
+def product(request,product_id):
+    brand  = Beer.objects.get(pk=product_id)
+    return render(request,'product.html',{'brand':brand})

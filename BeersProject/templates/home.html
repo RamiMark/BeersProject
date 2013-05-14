@@ -1,0 +1,19 @@
+<!-- index content -->
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block content %}
+{% for col in brands %}
+<div class="four columns">
+
+{% for brand in col %}
+ <a href="/product/{{brand.id}}" class="plain"> <img src="{% static "" %}brands/{{brand.id}}.jpg" alt="{{brand}}" /></a>
+{% endfor %}
+
+ </div>
+{% endfor %}
+
+ 
+ </div>
+ <!-- end index content -->
+{% endblock %}

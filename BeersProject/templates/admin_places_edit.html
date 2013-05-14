@@ -1,0 +1,77 @@
+{% extends "index.html" %}
+{% block content %}
+	<div class="sixteen columns" >
+ 
+ 	<div>
+		<div class="pick">
+		<div><a class="pick-icon1" href="#">pick</a></div>
+		</div>
+	
+	<div class="place-details">
+	
+		<div class="name1"><a href=#>Place1</a></div>
+			<div>
+			<span class="address">Tel-Aviv, Neviim 9</span>
+			<span class="address">+333 333 333</span>
+			<a class="pick-icon2" href="#" >edit</a>
+			<a class="pick-icon3" href="#" >edit</a>
+	</div>
+	</div>
+	</div>
+	<!-- <div class="form-summary">
+	<p>There are no Places associated with your Account.<br />
+	Fill out this form in order to add New Place and Beer Brands.</p>
+	</div>  -->
+	
+	<!--<div class="places">
+	<ul> 
+		<li><a href="#">Place 1 - Tel-Aviv, Neviim st., 10</a></li>
+		<li><a href="#">Place 2 - Tel-Aviv, Neviim st., 10</a></li>
+		<li><a href="#">Place 3 - Tel-Aviv, Neviim st., 10</a></li>
+	</ul> 
+	</div> -->
+
+   
+	<div class="form-content">
+	
+	<form id="signup_form" action="#" method="post">	
+    <label for="name">Place Name:</label>
+    <input type="text" name="name" id="name" value="" tabindex="1">
+    
+    <label for="position">Position: </label>
+    <input type="text" name="position" id="position" value="" tabindex="1">
+   
+	 
+	 <label for="type">Type of the Place:</label> 
+    <input type="radio" name="type" id="bar" tabindex="1" value="bar"><span class="radio-style">Bar</span>
+   	<input type="radio" name="type" id="cafe" tabindex="2" value="cafe"><span class="radio-style">Cafe </span> 
+    <input type="radio" name="type" id="restaurant" tabindex="3" value="restaurant"><span class="radio-style">Restautant</span>
+    <input type="radio" name="type" id="other" tabindex="4" value="other"><span class="radio-style">Other</span>
+   
+
+   
+   
+   <h2>Location</h2>
+	<label for="name">City:</label>
+    <input type="text" name="city" id="city" value="" tabindex="1">
+    
+    <label for="name">Street:</label>
+    <input type="text" name="street" id="street" value="" tabindex="6">
+    
+    <label for="name">House:</label>
+    <input type="text" name="house" id="house" value="" tabindex="7">
+    
+    <label for="name">Phone:</label>
+    <input type="text" name="phone" id="phone" value="" tabindex="8">
+
+    <label for="name">Hours:</label>
+    <input type="text" name="hours" id="hourse" value="" tabindex="8">
+   
+		<!--  <label for="continue">Continue</label> -->
+    <input  type="submit" id="continue" value="Continue">
+  </div>
+ </div>
+</form>
+
+</script>
+{% endblock %}

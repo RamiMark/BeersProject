@@ -17,4 +17,6 @@ urlpatterns = patterns('',
 
      (r'^search-brand/$',views.search_brand ),
      (r'^search-brand-results/$', views.search_brand_results),
+     (r'^$', views.index),
+     (r'^product/(\d+)$',views.product),
 )
